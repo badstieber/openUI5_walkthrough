@@ -1,10 +1,10 @@
 <mvc:View
-	controllerName="sap.ui.demo.walkthrough.controller.App"
+	controllerName="badstieber.walkthrough.controller.App"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 
     <Button 
-    text="Press me to say hello"
+    text="Drück mich Diggi"
     press=".onShowHello"
     ></Button>
 

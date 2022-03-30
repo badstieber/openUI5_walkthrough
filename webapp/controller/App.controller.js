@@ -4,9 +4,9 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
     "use strict";
 
-    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
+    return Controller.extend("badstieber.walkthrough.controller.App", {
         onShowHello: function () {
-            MessageToast.show("Hello World");
+            MessageToast.show("Hey yoh Diggi!! Was geht ab?!");
         }
     });
 });
