@@ -1,11 +1,9 @@
-<mvc:View
-	controllerName="badstieber.walkthrough.controller.App"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="badstieber.walkthrough.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
 
-    <Button 
-    text="Drück mich Diggi"
-    press=".onShowHello"
-    ></Button>
+    <Button text="Drück mich Diggi" press=".onShowHello"></Button>
+
+    <Input value="{/wombatTheDude/name}" description="The bestes of the best {/wombatTheDude/name}" valueLiveUpdate="true" width="50%"></Input>
 
 </mvc:View>

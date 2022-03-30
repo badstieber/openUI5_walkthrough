@@ -1,12 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/XMLView"
 
-], function (XMLView) {
+], (XMLView) => {
     "use strict";
 
     XMLView.create({
         viewName: "badstieber.walkthrough.view.App"
-    }).then(function (oView) {
+    }).then((oView) => {
         oView.placeAt("content");
     });
 });
