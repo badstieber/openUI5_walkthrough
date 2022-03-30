@@ -1,19 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
-], function (UIComponent, JSONModel, ResourceModel) {
+], function (UIComponent, JSONModel) {
 	"use strict";
 	return UIComponent.extend("badstieber.walkthrough.Component", {
 
 		metadata: {
-			"interfaces": ["sap.ui.core.IAsyncContentCreation"],
-			"rootView": {
-				"viewName": "badstieber.walkthrough.view.App",
-				"type": "XML",
-				"async": true,
-				"id": "app"
-			}
+			interfaces: ["sap.ui.core.IAsyncContentCreation"],
+			manifest: "json"
 		},
 
 		init: function () {
@@ -27,12 +21,8 @@ sap.ui.define([
 			};
 			const oModel = new JSONModel(oData);
 			this.setModel(oModel);
-			// set i18n model
-			const i18nModel = new ResourceModel({
-				bundleName: "badstieber.walkthrough.i18n.i18n"
-			});
-			this.setModel(i18nModel, "i18n");
+
 		},
-		
+
 	});
 });
