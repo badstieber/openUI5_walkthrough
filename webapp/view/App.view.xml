@@ -2,7 +2,7 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
 
-    <Button text="Drück mich Diggi" press=".onShowHello"></Button>
+    <Button text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
 
     <Input value="{/wombatTheDude/name}" description="The bestes of the best {/wombatTheDude/name}" valueLiveUpdate="true" width="50%"></Input>
 
