@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="badstieber.walkthrough.controller.HelloPanel"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Panel
+        headerText="{i18n>helloPanelTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="myCustomButton"></Button>
+            <Input
+                value="{/wombatTheDude/name}"
+                valueLiveUpdate="true"
+                width="60%"></Input>
+            <FormattedText
+                htmlText="Yowah {/wombatTheDude/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"></FormattedText>
+        </content>
+    </Panel>
+
+</mvc:View>
