@@ -21,7 +21,6 @@ sap.ui.define([
 			};
 			const oModel = new JSONModel(oData);
 			this.setModel(oModel);
-
 		},
 
 	});
