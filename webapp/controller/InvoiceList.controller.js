@@ -8,7 +8,7 @@ sap.ui.define([
 
         onInit: function () {
             var oViewModel = new JSONModel({
-                currency: "EUR in Bar Digger"
+                currency: "EUR in Bar Diggi"
             });
             this.getView().setModel(oViewModel, "view");
         }
