@@ -7,6 +7,12 @@
         title="Hello {/wombatTheDude/name}"
         draggable="true"
         resizable="true">
+        <content>
+            <core:Icon
+                src="sap-icon://cargo-train"
+                size="8rem"
+                class="sapUiMediumMargin"></core:Icon>
+        </content>
         <beginButton>
             <Button
                 text="{i18n>dialogCloseButtonText}"
